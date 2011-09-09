@@ -1,26 +1,27 @@
-filetype off
+filetype off  " Desabilita o tipo de arquivo que o VIM suporta
 
-call pathogen#runtime_append_all_bundles()
+call pathogen#runtime_append_all_bundles()  " carrega todos os bundles das linguagens suportadas
 
-set nocompatible
+set nocompatible 
 
-set showbreak=...
+set showbreak=... " Quebra a linha e poe os caracteres ... no final da linha
 set wrap linebreak nolist
 set fo=l
 
-set history=1000 " Define o historico do vi com 1000 comandos
-set showcmd     " mostra os comandos
-set showmode    " mostra o modo de comandos
-set incsearch   " mostra a proxima sequencia encontrada pela pesquisa digitada
-set hlsearch    " mostra a pesquisa com outra cor
+set history=1000  " Define o historico do vi com 1000 comandos
+set showcmd       " mostra os comandos
+set showmode      " mostra o modo de comandos
+set incsearch     " mostra a proxima sequencia encontrada pela pesquisa digitada
+set hlsearch      " mostra a pesquisa com outra cor
 
 
-" Theme enabling
- syntax enable
- colorscheme adam
-" set background=dark
+" Habilitando Temas
+ syntax enable " Habilita sintaxe
+ set t_Co=256
+ colorscheme railscasts " Selecionando o tipo de leyout que sera exibido
+ set background=dark " Seleciona esquema de cor do fundo do VIM
 
-" Indentation
+" Indentacao
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4

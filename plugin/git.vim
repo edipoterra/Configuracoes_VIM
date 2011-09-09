@@ -54,7 +54,7 @@ function! GitBranch()
         if !len(lines)
             return ''
         else
-            return matchstr(lines[0], 'refs/heads/\zs.\+$')
+            return '  [' . matchstr(lines[0], 'refs/heads/\zs.\+$') .']'
         endif
     else
         return ''
